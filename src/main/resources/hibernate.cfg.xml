@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://177.137.252.222:5432/caronex</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">postgres</property>
+    <mapping class="apoio.Pesquisas"/>
+    <mapping class="entidades.Cidade"/>
+    <mapping class="entidades.Endereco"/>
+    <mapping class="entidades.Grupo_Pessoa"/>
+    <mapping class="entidades.Grupo"/>
+    <mapping class="entidades.Login"/>
+    <mapping class="entidades.Pessoa"/>
+    <mapping class="entidades.Veiculo"/>
+    <mapping class="entidades.Viagem"/>
+    <mapping class="entidades.Viagem_Endereco"/>
+    <mapping class="entidades.Auditoria"/>
+    <mapping class="entidades.ResumoViagens"/>
+  </session-factory>
+</hibernate-configuration>
